@@ -1,15 +1,16 @@
+# Berkay Gurkan 2024-28-10
 # This code generates empty scene
 
-
+import argparse    
 from omni.isaac.lab.app import AppLauncher
 
 
-import argparse    
 # create argument parser
 parser = argparse.ArgumentParser(description="Create empty scene")
 # append AppLauncher cli args
 AppLauncher.add_app_launcher_args(parser)
 # parse the arguments
+# command line arguments include launching the app headless, configuring different Livestream options, and enabling off-screen rendering.
 args_cli = parser.parse_args()  
 # launch omniverse app
 app_launcher = AppLauncher(args_cli)
