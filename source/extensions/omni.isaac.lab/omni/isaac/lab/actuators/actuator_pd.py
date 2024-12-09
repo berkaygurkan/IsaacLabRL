@@ -148,6 +148,7 @@ class DCMotor(IdealPDActuator):
     * Continuous-stall torque (:math:`\tau_{motor, max}`): The maximum-rated torque produced at 0 speed.
     * Saturation torque (:math:`\tau_{motor, sat}`): The maximum torque that can be outputted for a short period.
 
+    
     Based on these parameters, the instantaneous minimum and maximum torques are defined as follows:
 
     .. math::
